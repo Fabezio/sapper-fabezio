@@ -12,9 +12,11 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "D": "^1.0.0",
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "sirv": "^1.0.0",
+    "sveltestrap": "^3.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -34,7 +36,6 @@
     "sapper": "^0.28.0",
     "stylus": "^0.54.8",
     "svelte": "^3.17.3",
-    "svelte-preprocess": "^4.2.1",
-    "sveltestrap": "^3.7.8"
+    "svelte-preprocess": "^4.2.1"
   }
 }

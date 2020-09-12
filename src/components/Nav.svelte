@@ -1,6 +1,30 @@
 <script>
 	export let segment;
+	
 </script>
+
+<template lang="pug" >
+	nav.bg-primary
+		ul
+			li 
+				a.text-light(aria-current="{segment === undefined ? 'page' : undefined}" href=".") Accueil
+			li
+				a.text-light(aria-current="{segment === 'services' ? 'page' : undefined}" href="services") Services
+			li
+				a.text-light(aria-current="{segment === 'skills' ? 'page' : undefined}" href="skills") Compétences
+	//- <nav>
+	//- 	<ul>
+	//- 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
+	//- 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+
+	//- 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+	//- 			the blog data when we hover over the link or tap it on a touchscreen -->
+	//- 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+	//- 	</ul>
+	//- </nav>
+
+</template>
+
 
 <style>
 	nav {
@@ -48,13 +72,3 @@
 	}
 </style>
 
-<nav>
-	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
-	</ul>
-</nav>
