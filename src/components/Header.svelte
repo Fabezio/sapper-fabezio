@@ -1,5 +1,4 @@
 <script>
-    // import {} from 'sveltestrap'
     export let title = "titre"
     let website = "fabezio.fr"
 </script>
